@@ -1,6 +1,6 @@
-@import "./__colors.css";
-@import "./__typography.css";
-@import "./__spacer.css";
+@import "__colors.css";
+@import "__typography.css";
+@import "__spacer.css";
 
 * *::after *::before {
 	margin: 0;
