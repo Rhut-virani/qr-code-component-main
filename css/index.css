@@ -1,0 +1,48 @@
+@import "./__colors.css";
+@import "./__typography.css";
+@import "./__spacer.css";
+
+* *::after *::before {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--light-gray);
+	overflow: hidden;
+}
+
+.container {
+	width: var(--vw);
+	height: var(--vh);
+	margin: calc((100vh - var(--vh)) / 2) auto;
+	padding: var(--spacer-400);
+	border-radius: 20px;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.qr-container {
+	flex: 1 0;
+}
+
+.qr-image {
+	width: 100%;
+	border-radius: 15px;
+	object-fit: cover;
+}
+
+.qr-text {
+	flex: 1 0;
+	padding: 0 5%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.qr-text h3 {
+	font-size: var(--font-600);
+}
